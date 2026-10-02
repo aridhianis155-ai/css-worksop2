@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GameStore</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1a4_22QFlaAhGDHcQ8dya_50x6gMFrWZKRPzWjCMesg&s=10" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="stylee.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="fixed top-0 left-0 right-0 z-50 border-b border-[rgba(66,232,245,0.16)] bg-[#050b13]/92 list-none">
+        <div class="max-w-7xl mx-auto px-5">
+          <div class="h-16 flex items-center justify-between">
+            <a href="#home" class="text-2xl font-black no-underline">
+              <span class="text-cyan-400">GAME</span>STORE
+            </a>
+
+            <div class=" flex items-center gap-8 lex items-center gap-3
+            text-xs sm:text-sm md:text-base
+            whitespace-nowrap list-none">
+              <a href="#home" class="text-white no-underline hover:text-cyan-400 transition-colors">Accueil</a>
+              <a href="#categories" class="text-white no-underline hover:text-cyan-400 transition-colors">Catégories</a>
+              <a href="#popular" class="text-white no-underline hover:text-cyan-400 transition-colors">Jeux populaires</a>
+              <a href="#deals" class="text-white no-underline hover:text-cyan-400 transition-colors">Promotions</a>
+            </div>
+
+            <div class="flex items-center gap-3">
+              <button class="hidden sm:block rounded-lg border border-sky-800 px-4 py-2 rounded text-sm hover:border-cyan-400">🔍</button>
+              <button class="relative rounded-lg border border-sky-800 px-4 py-2 rounded hover:border-cyan-400">🛒<span class="absolute -top-2 -right-2 bg-cyan-400 text-black text-xs rounded-full w-5 h-5 flex items-center justify-center"></span></button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="relative min-h-[650px] pt-16 overflow-hidden">
+        <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=85" class="absolute inset-0 w-full h-full object-cover" alt="Gaming" />
+        <div class="absolute inset-0 hero-overlay"></div>
+
+        <div class="relative max-w-7xl mx-auto px-5 min-h-[580px] flex items-center">
+          <div class="max-w-xl">
+            <span class="inline-block mb-4 rounded-full bg-cyan-400/20 border border-cyan-400 px-4 py-2 text-sm text-cyan-300">🔥 JEU DU MOMENT</span>
+            <h1 class="text-5xl md:text-7xl font-black leading-none mb-6">ELDEN <span class="text-cyan-400">RING</span></h1>
+            <p class="text-gray-300 text-lg mb-6">Explore un monde fantastique immense, affronte des boss légendaires et forge ton propre destin.</p>
+
+            <div class="flex flex-wrap gap-3 mb-7">
+              <span class="bg-sky-950 px-3 py-1 rounded">Action</span>
+              <span class="bg-sky-950 px-3 py-1 rounded">RPG</span>
+              <span class="bg-sky-950 px-3 py-1 rounded">Open World</span>
+            </div>
+
+            <div class="flex items-center gap-5">1
+              <a href="#" class="bg-cyan-500 text-black font-bold px-7 py-3 rounded-lg hover:bg-cyan-300 transition">Acheter — 41,99 €</a>
+              <a href="#" class="border border-gray-500 px-7 py-3 rounded-lg hover:border-cyan-400 transition">♡ Wishlist</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="popular" class="py-5">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2>🔥 Jeux populaires</h2>
+            <a href="#" class="text-info text-decoration-none">Voir tout →</a>
+          </div>
+
+          <div id="gamesCarousel" class="carousel slide carousel-fade games-carousel" data-bs-ride="carousel" data-bs-interval="2500">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card game-card">
+                      <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Elden Ring" />
+                      <div class="card-body">
+                        <h5 class="card-title">Elden Ring</h5>
+                        <span class="badge bg-success">-30%</span>
+                        <p class="mt-2"><del class="text-secondary">59,99 €</del></p>
+                        <div class="price">41,99 €</div>
+                        <a href="#" class="btn btn-primary mt-3 w-100">🛒 Acheter</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card game-card">
+                      <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Cyberpunk 2077" />
+                      <div class="card-body">
+                        <h5 class="card-title">Cyberpunk 2077</h5>
+                        <span class="badge bg-success">-60%</span>
+                        <p class="mt-2"><del class="text-secondary">59,99 €</del></p>
+                        <div class="price">23,99 €</div>
+                        <a href="#" class="btn btn-primary mt-3 w-100">🛒 Acheter</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card game-card">
+                      <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="God of War" />
+                      <div class="card-body">
+                        <h5 class="card-title">God of War</h5>
+                        <span class="badge bg-success">-50%</span>
+                        <p class="mt-2"><del class="text-secondary">59,99 €</del></p>
+                        <div class="price">29,99 €</div>
+                        <a href="#" class="btn btn-primary mt-3 w-100">🛒 Acheter</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card game-card">
+                      <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="Hogwarts Legacy" />
+                      <div class="card-body">
+                        <h5 class="card-title">Hogwarts Legacy</h5>
+                        <span class="badge bg-success">-40%</span>
+                        <p class="mt-2"><del class="text-secondary">59,99 €</del></p>
+                        <div class="price">35,99 €</div>
+                        <a href="#" class="btn btn-primary mt-3 w-100">🛒 Acheter</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <div class="card game-card">
+                      <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1737730725" class="card-img-top" alt="Red Dead Redemption 2" />
+                      <div class="card-body">
+                        <h5 class="card-title">Red Dead Redemption 2</h5>
+                        <span class="badge bg-success">-25%</span>
+                        <p class="mt-2"><del class="text-secondary">69,99 €</del></p>
+                        <div class="price">52,49 €</div>
+                        <a href="#" class="btn btn-primary mt-3 w-100">🛒 Acheter</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card game-card">
+                      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" class="card-img-top" alt="EA FC 26" />
+                      <div class="card-body">
+                        <h5 class="card-title">EA FC 26</h5>
+                        <span class="badge bg-success">-35%</span>
+                        <p class="mt-2"><del class="text-secondary">79,99 €</del></p>
+                        <div class="price">51,99 €</div>
+                        <a href="#" class="btn btn-primary mt-3 w-100">🛒 Acheter</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#gamesCarousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#gamesCarousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="games" class="py-16 px-6">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center mb-7">
+            <h2 class="mb-0">🎮 Jeux</h2>
+            <a href="#" class="text-info text-decoration-none">Voir tout</a>
+          </div>
+
+          <div class="games-interval">
+            <div class="games-row">
+              <article class="game-mini-card">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Cyberpunk 2077" />
+                <div class="card-body">
+                  <h4>Cyberpunk 2077</h4>
+                  <p>RPG • Action</p>
+                  <strong>23,99€</strong>
+                  <button class="btn btn-primary mt-3 w-100">Ajouter au panier</button>
+                </div>
+              </article>
+
+              <article class="game-mini-card">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80" alt="God of War" />
+                <div class="card-body">
+                  <h4>God of War</h4>
+                  <p>Action • Aventure</p>
+                  <strong>29,99€</strong>
+                  <button class="btn btn-primary mt-3 w-100">Ajouter au panier</button>
+                </div>
+              </article>
+
+              <article class="game-mini-card">
+                <img src="https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=800&q=80" alt="Hogwarts Legacy" />
+                <div class="card-body">
+                  <h4>Hogwarts Legacy</h4>
+                  <p>RPG • Aventure</p>
+                  <strong>35,99€</strong>
+                  <button class="btn btn-primary mt-3 w-100">Ajouter au panier</button>
+                </div>
+              </article>
+
+              <article class="game-mini-card">
+                <img src="https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1174180/header.jpg?t=1737730725" alt="Red Dead Redemption 2" />
+                <div class="card-body">
+                  <h4>Red Dead Redemption 2</h4>
+                  <p>Western • Action</p>
+                  <strong>52,49€</strong>
+                  <button class="btn btn-primary mt-3 w-100">Ajouter au panier</button>
+                </div>
+              </article>
+
+              <article class="game-mini-card">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" alt="Cyberpunk 2077" />
+                <div class="card-body">
+                  <h4>Cyberpunk 2077</h4>
+                  <p>RPG • Action</p>
+                  <strong>23,99€</strong>
+                  <button class="btn btn-primary mt-3 w-100">Ajouter au panier</button>
+                </div>
+              </article>
+
+              <article class="game-mini-card">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=800&q=80" alt="God of War" />
+                <div class="card-body">
+                  <h4>God of War</h4>
+                  <p>Action • Aventure</p>
+                  <strong>29,99€</strong>
+                  <button class="btn btn-primary mt-3 w-100">Ajouter au panier</button>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="categories" class="categorie-game py-5">
+        <div class="container">
+          <div class="d-flex align-items-center gap-3 mb-4">
+            <i class="fa-solid fa-layer-group" style="color: rgb(116, 192, 252);"></i>
+            <h2 class="mb-0">Catégories</h2>
+          </div>
+
+          <div class="category-window">
+            <div class="category-track">
+              <a href="#" class="category-card relative w-[300px] h-48 flex-shrink-0 rounded-xl overflow-hidden border border-sky-900">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&q=80" class="zoom-image absolute inset-0 w-full h-full object-cover" alt="Action" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-5 left-5">
+                  <h3 class="text-2xl font-bold">⚔️ Action</h3>
+                  <p class="text-gray-300">215 jeux</p>
+                </div>
+              </a>
+
+              <a href="#" class="category-card relative w-[300px] h-48 flex-shrink-0 rounded-xl overflow-hidden border border-sky-900">
+                <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=700&q=80" class="zoom-image absolute inset-0 w-full h-full object-cover" alt="Aventure" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-5 left-5">
+                  <h3 class="text-2xl font-bold">🧭 Aventure</h3>
+                  <p class="text-gray-300">186 jeux</p>
+                </div>
+              </a>
+
+              <a href="#" class="category-card relative w-[300px] h-48 flex-shrink-0 rounded-xl overflow-hidden border border-sky-900">
+                <img src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=700&q=80" class="zoom-image absolute inset-0 w-full h-full object-cover" alt="RPG" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-5 left-5">
+                  <h3 class="text-2xl font-bold">🛡️ RPG</h3>
+                  <p class="text-gray-300">245 jeux</p>
+                </div>
+              </a>
+
+              <a href="#" class="category-card relative w-[300px] h-48 flex-shrink-0 rounded-xl overflow-hidden border border-sky-900">
+                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" class="zoom-image absolute inset-0 w-full h-full object-cover" alt="Simulation" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-5 left-5">
+                  <h3 class="text-2xl font-bold">⚙️ Simulation</h3>
+                  <p class="text-gray-300">120 jeux</p>
+                </div>
+              </a>
+
+              <a href="#" class="category-card relative w-[300px] h-48 flex-shrink-0 rounded-xl overflow-hidden border border-sky-900">
+                <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&w=700&q=80" class="zoom-image absolute inset-0 w-full h-full object-cover" alt="Sport" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-5 left-5">
+                  <h3 class="text-2xl font-bold">🏆 Sport</h3>
+                  <p class="text-gray-300">98 jeux</p>
+                </div>
+              </a>
+
+              <a href="#" class="category-card relative w-[300px] h-48 flex-shrink-0 rounded-xl overflow-hidden border border-sky-900">
+                <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=700&q=80" class="zoom-image absolute inset-0 w-full h-full object-cover" alt="Indépendant" />
+                <div class="absolute inset-0 bg-gradient-to-t from-black via-black/60 to-transparent"></div>
+                <div class="absolute bottom-5 left-5">
+                  <h3 class="text-2xl font-bold">⭐ Indépendant</h3>
+                  <p class="text-gray-300">142 jeux</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deals" class="py-16 px-5">
+        <div class="max-w-7xl mx-auto">
+          <div class="mb-8">
+            <i class="fa-solid fa-bullhorn" style="color: rgb(52, 143, 215);"></i>
+            <span class="text-cyan-400">OFFRES LIMITÉES</span>
+            <h2 class="text-4xl font-black mt-2">🔥 Grosses promotions</h2>
+          </div>
+
+          <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <article class="bg-[#0b1b2b] border border-sky-900 rounded-xl overflow-hidden hover:border-cyan-400 transition">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" class="w-full h-56 object-cover" alt="Ultimate Gaming Deal" />
+              <div class="p-5">
+                <span class="text-green-400 font-bold">-70%</span>
+                <h3 class="text-2xl font-bold mt-2">Ultimate Gaming Deal</h3>
+                <p class="text-gray-400 mt-2">Profite des meilleures offres du moment.</p>
+                <a href="#" class="inline-block mt-5 bg-cyan-500 text-black font-bold px-5 py-2 rounded-lg hover:bg-cyan-300">Voir l'offre</a>
+              </div>
+            </article>
+
+            <article class="bg-[#0b1b2b] border border-sky-900 rounded-xl overflow-hidden hover:border-cyan-400 transition">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80" class="w-full h-56 object-cover" alt="RPG Collection" />
+              <div class="p-5">
+                <span class="text-green-400 font-bold">-60%</span>
+                <h3 class="text-2xl font-bold mt-2">RPG Collection</h3>
+                <p class="text-gray-400 mt-2">Des RPG populaires à prix réduit.</p>
+                <a href="#" class="inline-block mt-5 bg-cyan-500 text-black font-bold px-5 py-2 rounded-lg">Voir l'offre</a>
+              </div>
+            </article>
+
+            <article class="bg-[#0b1b2b] border border-sky-900 rounded-xl overflow-hidden hover:border-cyan-400 transition">
+              <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=900&q=80" class="w-full h-56 object-cover" alt="Racing Games" />
+              <div class="p-5">
+                <span class="text-green-400 font-bold">-50%</span>
+                <h3 class="text-2xl font-bold mt-2">Racing Games</h3>
+                <p class="text-gray-400 mt-2">Les meilleurs jeux de course.</p>
+                <a href="#" class="inline-block mt-5 bg-cyan-500 text-black font-bold px-5 py-2 rounded-lg">Voir l'offre</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-5 py-16 bg-[#071522]">
+        <div class="max-w-4xl mx-auto text-center">
+          <h2 class="text-3xl md:text-4xl font-black">Ne rate aucune promotion 🎮</h2>
+          <p class="text-gray-400 mt-3">Reçois les nouvelles offres et les nouveaux jeux.</p>
+
+          <div class="flex flex-col sm:flex-row gap-3 mt-7 max-w-xl mx-auto">
+            <input type="email" placeholder="Ton adresse email" class="flex-1 bg-[#0b1b2b] border border-sky-900 rounded-lg px-4 py-3 outline-none focus:border-cyan-400" />
+            <button class="bg-cyan-500 text-black font-bold rounded-lg px-6 py-3 hover:bg-cyan-300">S'inscrire</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="border-t border-sky-900 bg-[#030a11] py-10 px-5 no-underline relative overflow-hidden bg-cover bg-center text-white" style="background-image: url('https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1800&q=85')">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div>
+          <a href="#home" class="text-2xl font-black">
+            <span class="text-cyan-400">GAME</span>STORE
+          </a>
+          <p class="text-white mt-3">Ta boutique gaming pour découvrir et acheter tes jeux préférés.</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-3 list-none  no-underline">Navigation</h3>
+          <div class="space-y-2 text-gray-500 list-none no-underline">
+            <a href="#home" class="block hover:text-cyan-400">Accueil</a>
+            <a href="#categories" class="block hover:text-cyan-400">Catégories</a>
+            <a href="#popular" class="block hover:text-cyan-400">Jeux populaires</a>
+            <a href="#deals" class="block hover:text-cyan-400">Promotions</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="font-bold mb-3">Suivez-nous</h3>
+          <div class="flex gap-3">
+            <a href="#" class="w-10 h-10 rounded-lg bg-[#0b1b2b] flex items-center justify-center hover:bg-cyan-500 hover:text-black">🎮</a>
+            <a href="#" class="w-10 h-10 rounded-lg bg-[#0b1b2b] flex items-center justify-center hover:bg-cyan-500 hover:text-black">▶️</a>
+            <a href="#" class="w-10 h-10 rounded-lg bg-[#0b1b2b] flex items-center justify-center hover:bg-cyan-500 hover:text-black">💬</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-7xl mx-auto border-t border-sky-900 mt-8 pt-6 text-center text-white-600 text-sm">© 2026 GameStore — Tous droits réservés.</div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+  </body>
+</html>
