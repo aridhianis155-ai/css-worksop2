@@ -1,0 +1,2 @@
+# css-worksop2
+ia ce que fait:J’ai harmonisé les couleurs, les bordures et les transitions du CSS pour rendre la boutique plus cohérente et plus élégante. J’ai aussi regroupé les règles répétées sur les cartes et les animations pour éviter les doublons et améliorer la lisibilité du code. Cette amélioration rend l’interface plus fluide, plus professionnelle et plus agréable à naviguer sur mobile et desktop.
